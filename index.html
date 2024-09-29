@@ -366,12 +366,14 @@
                   </ul>
                </div>
                <!----------------------------------------------------------------footer_form-->
-               <div>
+               <div class="footer-form-container">
+                  <p class="footer-form-p">Subscribe</p>
                   <form class="footer-form">
-                       <p class="footer-form-p">Subscribe</p>
+                       
                      <div class="footer-btn">
-                         <input class="footer-form-input" type="text" name="E-mail" placeholder="E-mail" required/>
-                        <button class="submit-btn" type="submit">Subscribe<svg class="footer-icons" aria-label="icon-plane" width="24" height="24">
+                        <label class="input label"></label>
+                         <input class="footer-form-input" type="email" name="E-mail" placeholder="E-mail" required/>
+                        <button class="submit-btn" type="submit">Subscribe<svg class="footer-icons-btn" aria-label="icon-plane" width="24" height="24">
                            <use href="./images/icons-modal.svg#icon-btn-icon"></use>
                             </svg>
                         </button>
@@ -380,9 +382,94 @@
                  </div>
        </div>
      </footer>
-          <!----------------------------------------------------------------MODAL FORM <button class="icon__btn" type="submit" aria-label="icon-man"><i class="icon-in-btn"></i></button>-->
+     
+<!----------------------------------------------------------------MODAL FORM <button class="icon__btn" type="submit" aria-label="icon-man"><i class="icon-in-btn"></i></button>-->
+              <div class="backdrop_overlay">
+                <div class="modal-window">
+                  <button class="btn-close" type="button"><svg class="icon-close" width="8px" height="8px"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
+                    <p class="modal-p"></p>
+                     <form>
+                      <div class="first-form">
+                        <label class="first-label" for="user-name">Name</label>
+                         <div class="first-input-box">
+                           <input class="first-input" id="user-name" name="user-name" type="text">
+                              <svg class="first-icon" widht="18" height="24"><use href="./images/icons-modal.svg#icon-person"></use></svg>
+                           </input>
+                         </div>
+                      </div>
+                      <div class="first-form">
+                        <label class="first-label" for="user-tel">Phone</label>
+                        <div class="first-input-box">
+                           <input class="first-input" id="user-tel" name="user-tel" type="tel">
+                           <svg class="first-icon" widht="18" height="24">
+                              <use href="./images/icons-modal.svg#icon-phone"></use>
+                           </svg>
+                        </div>
+                      </div>
+                      <div class="first-form">
+                        <label class="first-label" for="user-tel">Email</label>
+                        <div class="first-input-box">
+                           <input class="first-input" id="user-tel" name="user-email" type="tel">
+                           <svg class="first-icon" widht="18" height="24">
+                              <use href="./images/icons-modal.svg#icon-email"></use>
+                           </svg>
+                        </div>
+                      </div>
+                     <div class="textarea-box">
+                        <label class="first-label" for="user-comment">Comment</label>
+                        <textarea class="textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+                        <div class="textarea-box">
+                           <input class="textarea-input visually-hadden" type="checkbox" value="true" id="user-privacy" name="user-privacy">
+                           <label class="checkbox-label" for="user-privacy">I accept the terms and conditions of the<span class="privacy">
+                              <svg class="span-icon" width="10" height="8"><use href="./images/icons-modal.svg#icon-Vector"></use></svg></span></label>
+                        </div>
+                     </div>
+                     </form>
+               </div>
+             </div>
 
-      <div class="modal-overlay" data-modal-close>
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--<div class="modal-overlay" data-modal-close>
          
          <div class="modal">
             <div class="modal-close-icon">
@@ -419,7 +506,7 @@
 
 
          </div>
-      </div>
+      </div>-->
 
  </body>
  </html>
