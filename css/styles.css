@@ -805,10 +805,6 @@ ol {
   border-color: #4d5ae5;
 }
 
-.textarea-box {
-  margin-bottom: 24px;
-}
-
 .checkbox-container {
   margin-bottom: 24px;
 }
@@ -856,9 +852,6 @@ ol {
 input:checked + .checkbox-label .checkbox-icon {
   background-color: var(--checkbox-checked-bg, #404bbf);
   border: none;
-}
-
-input:checked + .checkbox-label .checkbox-icon .icon-chekbox {
   fill: var(--checkbox-icon-color, #f4f4fd);
 }
 
