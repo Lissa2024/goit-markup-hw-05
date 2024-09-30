@@ -552,7 +552,7 @@ ol {
 }
 
 .footer-box-link {
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .footer-social {
@@ -656,6 +656,15 @@ ol {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-class:hover {
+  background-color: #31d0aa;
+}
+
+.button-class:focus {
+  background-color: #31d0aa;
 }
 
 .icon-class {
@@ -665,6 +674,11 @@ ol {
 /*---------------------------modal form*/
 
 .backdrop_overlay {
+  display: none;
+}
+
+.backdrop_overlay.is-open {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -872,7 +886,10 @@ input:checked + .checkbox-label .checkbox-icon {
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
